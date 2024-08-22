@@ -28,3 +28,5 @@ jobs:
       - name: Run tox
         # Run tox using the version of Python in `PATH`
         run: tox -e py
+      - name: Coveralls
+        uses: coverallsapp/github-action@v2
