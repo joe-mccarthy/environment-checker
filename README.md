@@ -1,8 +1,9 @@
 # Environment Checker
 
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/joe-mccarthy/environment-checker/build-test.yml?style=for-the-badge)
-![Coveralls](https://img.shields.io/coverallsCoverage/github/joe-mccarthy/environment-checker?style=for-the-badge) 
+![Coveralls](https://img.shields.io/coverallsCoverage/github/joe-mccarthy/environment-checker?style=for-the-badge)
 [![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg?style=for-the-badge)](https://www.python.org/downloads/release/python-380/)
+![GitHub Release](https://img.shields.io/github/v/release/joe-mccarthy/environment-checker?sort=semver&style=for-the-badge)
 ![GitHub License](https://img.shields.io/github/license/joe-mccarthy/environment-checker?style=for-the-badge)
 
 Simple script that's called from a cron job that will take a reading from a bme 280 sensor or open weather api and record the result in a csv file with the calculated dew point.
