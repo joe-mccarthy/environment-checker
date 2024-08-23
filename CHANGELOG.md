@@ -37,5 +37,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Removed hard coded variables
 
-[unreleased]: https://github.com/joe-mccarthy/environment-checker/compare/v1.1.1...HEAD
-[1.0.0]: https://github.com/joe-mccarthy/environment-checker/releases/tag/v0.0.1
+[unreleased]: https://github.com/joe-mccarthy/environment-checker/compare/1.0.0...HEAD
+[1.0.0]: https://github.com/joe-mccarthy/environment-checker/releases/tag/1.0.0
