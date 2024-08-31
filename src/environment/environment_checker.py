@@ -75,7 +75,7 @@ def get_data(api, lat, lon, file_location, address):
     Fetches weather data and writes it to a file.
 
     Args:
-        api (str): The API key for OpenWeatherMap. 
+        api (str): The API key for OpenWeatherMap.
                 If this is None, data is fetched from the BME280 sensor.
         lat (float): The latitude of the location.
         lon (float): The longitude of the location.
@@ -107,7 +107,7 @@ def __parse_args():
     This function uses argparse to parse command line arguments and returns an argparse.
 
     Returns:
-        argparse.Namespace: An object that holds the command line arguments as attributes. 
+        argparse.Namespace: An object that holds the command line arguments as attributes.
             This object will have the following attributes:
             - api (str): The API key for OpenWeatherMap.
             - lat (float): The latitude for weather data.

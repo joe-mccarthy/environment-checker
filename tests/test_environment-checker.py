@@ -21,9 +21,9 @@ def test_open_weather_api(mock_get):
     )
 
     # Assert that the function returns the expected values
-    assert math.isclose(temperature,25.5)
-    assert math.isclose(pressure,1013)
-    assert math.isclose(humidity,70)
+    assert math.isclose(temperature, 25.5)
+    assert math.isclose(pressure, 1013)
+    assert math.isclose(humidity, 70)
 
 
 @patch("smbus2.SMBus")
@@ -49,9 +49,9 @@ def test_bme_280(mock_sample, mock_load_calibration_params, mock_smbus):
         mock_smbus.return_value, address, mock_load_calibration_params.return_value
     )
 
-    assert math.isclose(temperature,20.0)
-    assert math.isclose(pressure,1000.0)
-    assert math.isclose(humidity,50.0)
+    assert math.isclose(temperature, 20.0)
+    assert math.isclose(pressure, 1000.0)
+    assert math.isclose(humidity, 50.0)
 
 
 @patch("requests.get")
@@ -62,7 +62,7 @@ def test_get_data_api(mock_stat, mock_api):
     mock_stat.return_value.st_size = 0
     mock_file = mock_open()
     with patch("src.environment.environment_checker.io.open", mock_file, create=True):
-        get_data("api_key", "lat", "lon", "file_location","address")
+        get_data("api_key", "lat", "lon", "file_location", "address")
     mock_file.assert_called_once_with(
         "file_location", "a", newline="", encoding="utf-8"
     )
@@ -95,8 +95,8 @@ def test_parse_args(mock_parse_args):
     )
     result = __parse_args()
     assert result.api == "api_key"
-    assert result.lat == 1.0
-    assert result.lon == 1.0
+    assert math.isclose(result.lat, 1.0)
+    assert math.isclose(result.lon, 1.0)
     assert result.file == "file_location"
     assert result.port == 1
     assert result.address == "0x77"
