@@ -6,6 +6,7 @@ from src.environment.environment_checker import (
     __bme_280,
     get_data,
 )
+import math
 
 
 @patch("requests.get")
@@ -20,9 +21,9 @@ def test_open_weather_api(mock_get):
     )
 
     # Assert that the function returns the expected values
-    assert temperature == 25.5
-    assert pressure == 1013
-    assert humidity == 70
+    assert math.isclose(temperature,25.5)
+    assert math.isclose(pressure,1013)
+    assert math.isclose(humidity,70)
 
 
 @patch("smbus2.SMBus")
@@ -48,9 +49,9 @@ def test_bme_280(mock_sample, mock_load_calibration_params, mock_smbus):
         mock_smbus.return_value, address, mock_load_calibration_params.return_value
     )
 
-    assert temperature == 20.0
-    assert pressure == 1000.0
-    assert humidity == 50.0
+    assert math.isclose(temperature,20.0)
+    assert math.isclose(pressure,1000.0)
+    assert math.isclose(humidity,50.0)
 
 
 @patch("requests.get")
