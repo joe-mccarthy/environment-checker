@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Changelog typo
+- [#1](https://github.com/joe-mccarthy/environment-checker/pull/1) Update dependencies via dependabot
 
 ## [1.0.0] - 2024-08-23
 
