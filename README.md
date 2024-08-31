@@ -1,10 +1,11 @@
 # Environment Checker
 
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/joe-mccarthy/environment-checker/build-test.yml?style=for-the-badge)
-![Coveralls](https://img.shields.io/coverallsCoverage/github/joe-mccarthy/environment-checker?style=for-the-badge)
-![Sonar Quality Gate](https://img.shields.io/sonar/quality_gate/joe-mccarthy_environment-checker?server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge)
-![GitHub Release](https://img.shields.io/github/v/release/joe-mccarthy/environment-checker?sort=semver&style=for-the-badge)
-![GitHub License](https://img.shields.io/github/license/joe-mccarthy/environment-checker?style=for-the-badge)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/joe-mccarthy/environment-checker/build-test.yml)
+![Coveralls](https://img.shields.io/coverallsCoverage/github/joe-mccarthy/environment-checker)
+![Sonar Quality Gate](https://img.shields.io/sonar/quality_gate/joe-mccarthy_environment-checker?server=https%3A%2F%2Fsonarcloud.io)
+![GitHub Release](https://img.shields.io/github/v/release/joe-mccarthy/environment-checker?sort=semver)
+![GitHub commits since latest release](https://img.shields.io/github/commits-since/joe-mccarthy/environment-checker/latest)
+![GitHub License](https://img.shields.io/github/license/joe-mccarthy/environment-checker)
 
 Simple script that's called from a cron job that will take a reading from a bme 280 sensor or open weather api and record the result in a csv file with the calculated dew point.
 
