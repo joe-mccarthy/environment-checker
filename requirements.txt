@@ -1,8 +1,8 @@
 black==24.10.0
-certifi==2024.8.30
-charset-normalizer==3.4.0
-click==8.1.7
-coverage==7.6.8
+certifi==2024.12.14
+charset-normalizer==3.4.1
+click==8.1.8
+coverage==7.6.10
 idna==3.10
 iniconfig==2.0.0
 meteocalc==1.1.0
@@ -11,10 +11,10 @@ packaging==24.2
 pathspec==0.12.1
 platformdirs==4.3.6
 pluggy==1.5.0
-pytest==8.3.3
+pytest==8.3.4
 pytest-cov==6.0.0
 pytz==2024.2
 requests==2.32.3
 RPi.bme280==0.2.4
 smbus2==0.5.0
-urllib3==2.2.3
+urllib3==2.3.0
