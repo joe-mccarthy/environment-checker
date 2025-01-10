@@ -15,7 +15,7 @@ Ensure that you have the bme_280 sensors correctly connected and have made a not
 
 ### Prerequisites
 
-- Python 3.8 or higher
+- Python 3.11 or higher
 
 ### Installation
 
